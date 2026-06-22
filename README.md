@@ -16,19 +16,21 @@ It provides a clean UI for authentication, task management, and profile editing.
 ---
 
 ## 📂 Project Structure
-Taskify-frontend/
-├── app/                     # Expo Router screens
-│   ├── (auth)/              # Authentication flow
-│   ├── (tasks)/             # Task dashboard flow
-│   ├── (profile)/           # User profile flow
-│   └── _layout.tsx          # Navigation layout
-├── components/              # Reusable UI components
-├── context/                 # Global state (AuthContext, TaskContext)
-├── services/                # API calls (api.ts, auth.ts, tasks.ts)
-├── utils/                   # Helpers (validators, storage)
-├── assets/                  # Images, fonts
-├── .env.example             # Environment template
-└── README.md
+taskify_apis/
+├── sql/
+│   ├── migrations/001_initial_schema.sql
+│   └── seeds/001_seed_data.sql
+├── src/
+│   ├── config/
+│   ├── controllers/
+│   ├── db/
+│   ├── middleware/
+│   ├── routes/
+│   ├── utils/
+│   ├── app.js
+│   └── index.js
+├── .env.example
+└── package.json
 
 ---
 
