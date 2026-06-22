@@ -17,7 +17,6 @@ It provides a clean UI for authentication, task management, and profile editing.
 
 ## 📂 Project Structure
 Taskify-frontend/
-
 ├── app/                     # Expo Router screens
 │   ├── (auth)/              # Authentication flow
 │   ├── (tasks)/             # Task dashboard flow
