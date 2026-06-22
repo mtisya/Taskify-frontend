@@ -63,7 +63,16 @@ cp .env.example .env
 This frontend consumes the Taskify API (github.com (https://github.com/spearhead-inc/taskify-apis).
 Make sure the backend is running locally or deployed before using the app.
 
-## Screenshots
-(Add screenshots of login, task list, and profile screens here)
+## 📸 Screenshots
+
+### 🔐 Login Screen
+![Login Screen](./assets/screenshots/login.png)
+
+### 📋 Task List
+![Task List](./assets/screenshots/tasks.png)
+
+### 👤 Profile Screen
+![Profile Screen](./assets/screenshots/profile.png)
+
 
 MIT License © 2026 Sammy Mutisya Kivaki
