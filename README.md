@@ -57,11 +57,11 @@ Copy `.env.example` to `.env` and update values:
 ```bash
 cp .env.example .env
 
-🔗 Backend Integration
+## Backend Integration
 This frontend consumes the Taskify API (github.com (https://github.com/spearhead-inc/taskify-apis).
 Make sure the backend is running locally or deployed before using the app.
 
-📸 Screenshots
+## Screenshots
 (Add screenshots of login, task list, and profile screens here)
 
 MIT License © 2026 Sammy Mutisya Kivaki
