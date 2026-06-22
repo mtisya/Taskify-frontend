@@ -66,7 +66,7 @@ Make sure the backend is running locally or deployed before using the app.
 ## 📸 Screenshots
 
 ### 🔐 Login Screen
-![Login Screen](./assets/screenshots/login.png)
+![Login Screen](./assets/Mutisya.jpg)
 
 ### 📋 Task List
 ![Task List](./assets/screenshots/tasks.png)
