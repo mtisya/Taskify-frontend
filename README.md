@@ -74,5 +74,39 @@ Make sure the backend is running locally or deployed before using the app.
 ### 👤 Profile Screen
 ![Profile Screen](./assets/screenshots/profile.png)
 
+## 🛠 Engineering Breakdown: State Management
+
+### 🎯 Chosen Pattern
+We implemented **React Context + Reducer pattern** for global state management.
+
+- **AuthContext** → handles authentication state (tokens, login/logout).
+- **TaskContext** → manages task data (list, create, update, delete).
+- Both contexts wrap the app so child components can consume state without prop‑drilling.
+
+---
+
+### ⚖️ Architectural Trade‑offs
+
+**Pros**
+- ✅ Simplicity: Context API is built into React, no external dependencies like Redux.
+- ✅ Scoped state: Auth and Task contexts are isolated, reducing coupling.
+- ✅ Async integration: Works smoothly with Axios interceptors and SecureStore.
+- ✅ Lightweight: Ideal for small to mid‑sized apps without complex state graphs.
+
+**Cons**
+- ⚠️ Re‑render overhead: Context updates can trigger re‑renders across all consumers.
+- ⚠️ Scaling limits: As the app grows, debugging and performance tuning may be harder compared to Redux or Zustand.
+- ⚠️ No devtools: Lacks advanced debugging tools available in Redux ecosystem.
+- ⚠️ Persistence complexity: Requires manual handling of token persistence (SecureStore) and hydration on app start.
+
+---
+
+### 🧩 Why This Trade‑off Works for Taskify
+- The app’s state is relatively simple (auth + tasks).
+- Context keeps the architecture **clean and easy to reason about**.
+- Avoids over‑engineering with Redux for a project that doesn’t need heavy middleware.
+- Future scaling can migrate to Redux Toolkit or Zustand if performance bottlenecks appear.
+
+
 
 MIT License © 2026 Sammy Mutisya Kivaki
